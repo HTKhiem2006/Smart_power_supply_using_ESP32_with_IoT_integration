@@ -1,20 +1,33 @@
-# Smart_Power_Supply_Station_Using_ESP32_with_IoT_Integration
-A smart, battery-powered DC power supply station based on ESP32 with IoT integration. The system features an adjustable 1–12V/3A DC output.
-Giai đoạn 1: Lên ý tưởng hệ thống
-- vi điều khiển chính, module ESP32 gắn trên mạch chính mà không cần dùng vi điều khiển rời
-- dùng 4 viên pin 18650 mắc nối tiếp, phần quản lý sạc và bảo vệ v.v sẽ để riêng ở phần pin, không bỏ vào mạch chính
-- điện áp đầu ra, điều chỉnh được từ 1 - 12V (không quan tâm hạ xuống 0V tuyệt đối)
-- Phần công suất hạ áp sẽ không gắn module có sẳn, thay vào đó lắp các linh kiện trên mạch và sẽ dùng IC điều khiển tích hợp MOSFET bên trong
-- điều chỉnh nằm cơ chế núm xoay bằng tay (có thể xem xét dùng biến trở hoặc rotery encoder gì đó)
-- dòng điện đầu ra tối đa chỉ cần 3A, đo bằng cảm biến đo dòng thích hợp, gửi về Vi điều khiển sau đó hiển thị lên OLED
-- phần iot chủ yếu là firmware, xong hết sẽ tới
-- Phần vỏ 3D không quá quan tâm, cuối cùng xong hết sẽ tới nó
+Tính toán, thiết kế một bộ nguồn di động có khả năng cấp ra điện áp từ điều chỉnh được bằng núm xoay vặn bằng tay, sau này sẽ nâng cấp lên điều chỉnh trên phần mềm điện thoại/ máy tính. Ngoài ra còn có thể quan sát được điện áp hiện tại, dòng điện tiêu thụ của tải, hiển thị trên màn hình OLED 0.98" và sau này có thể hiển thị lên phần mềm điện thoại/ máy tính.
 
-Giai đoạn 2: Lựa chọn linh kiện
-- 4 pin 18650 mắc nối tiếp
-- MCU: ESP32-WROOM-32D
-- Màn OLED 0.98" I2C
-- Module dùng để nuôi MCU: MP1584EN - 3.3V, gắn module trên PCB luôn.
-- Module dùng để đo dòng: ACS712 - 5A, gắn module trên PCB, hoặc có thể xem xét thiết kế lại trên PCB
-- IC công suất Buck chọn LM2596T-adj vì nó dễ thực hiện, phần linh kiện bên ngoài
-- Phần núm xoay chọn Rotary Encoder và thiết kế một mạch điều khiển riêng
+
+Yêu cầu kĩ thuật:
+- Phải có một sơ đồ tổng quát cụ thể 
+- Phải tính toán được các tất cả các thông số chứ không nói đại
+- điều chỉnh từ 0 đến 12V bằng núm xoay (không nhất thiết phải về 0V), nếu có thể sau này sẽ điều chỉnh trên phần mềm
+- có thể cấp dòng tối đa 6A --> 12*6 = 78W
+- Hệ thống sẽ dùng pin, chứ không dùng nguồn adapter, các bộ phận quản lý pin (BMS) nằm riêng
+- Có khả năng hiển thị các thông số lên một màn hình OLED, nếu có thể sau này sẽ quan sát trên phần mềm
+- Đang hướng tới tạo thêm xung clock nữa chu kỳ 1 giây và các 
+- Hệ thống sẽ có các khối bảo vệ quá dòng, quá áp, quá nhiệt,...
+- Sẽ thiết kế toàn bộ trên PCB mà không dùng module ghép lại, riêng chỉ có ESP32 là dùng module gắn lên PCB
+- Sau này sẽ nâng cấp lên thiết kế vỏ đi in 3D
+
+
+Linh kiện sẽ sử dụng
+- ESP32 WROOM 32D: 120.000
+- OLED 0.98" giao tiếp I2C: 45.000
+- IC nguồn XL4016 - ADJ/8A: 25.000
+- IC LM2596 5V/3A: 15.000
+- Nguồn 4 cell pin 18650 mắc nối tiếp 16V, các phụ kiện BMS: xx 100.000
+- Module đo dòng ACS712-5A: 40.000
+- Các linh kiện và ngoại vi khác thêm vào trong quá trình làm: xx 200.000
+- Mạch in PCB 2 lớp, gia công: 200.000
+- Vỏ 3D nếu hoàn thành: 200.000
+
+
+Các kiến thức cơ bản cần phải có:
+- Giao thức và Ngoại vi: I2C, ADC, GPIO, Timer, PWM
+- Buck converter
+- ArduinoIDE và ESP-IDF
+- 
