@@ -30,4 +30,6 @@ Các kiến thức cơ bản cần phải có:
 - Giao thức và Ngoại vi: I2C, ADC, GPIO, Timer, PWM
 - Buck converter
 - ArduinoIDE và ESP-IDF
-- 
+
+Giai đoạn 1: Lên ý tưởng thiết kế và lựa chọn linh kiện
+
