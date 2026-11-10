@@ -14,7 +14,7 @@ Yêu cầu kĩ thuật:
 - Sau này sẽ nâng cấp lên thiết kế vỏ đi in 3D
 
 
-Linh kiện sẽ sử dụng
+Linh kiện sẽ sử dụng:
 - ESP32 WROOM 32D: 120.000
 - OLED 0.98" giao tiếp I2C: 45.000
 - IC nguồn XL4016 - ADJ/8A: 25.000
