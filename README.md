@@ -31,5 +31,4 @@ Các kiến thức cơ bản cần phải có:
 - Buck converter
 - ArduinoIDE và ESP-IDF
 
-Giai đoạn 1: Lên ý tưởng thiết kế và lựa chọn linh kiện
 
