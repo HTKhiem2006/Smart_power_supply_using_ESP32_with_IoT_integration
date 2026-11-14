@@ -32,6 +32,6 @@ Các kiến thức cơ bản cần phải có:
 - ArduinoIDE và ESP-IDF
 
 Giai đoạn 1: Lắp ráp và mô phỏng thử
-- Mua mấy cái module về để lắp ráp test thử chức năng chính có chạy được không
-- 
+- Mua mấy cái module về để lắp ráp test thử chức năng chính có chạy được không, đã test thành công
+- giờ còn test trên vi điều khiển nữa là được
 
