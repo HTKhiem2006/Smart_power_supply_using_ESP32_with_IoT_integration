@@ -26,12 +26,6 @@ Linh kiện sẽ sử dụng:
 - Vỏ 3D nếu hoàn thành: 200.000
 
 
-Các kiến thức cơ bản cần phải có:
-- Giao thức và Ngoại vi: I2C, SPI, DAC, ADC, Wi-fi, TCP/IP.
-- Buck converter
-- ArduinoIDE và ESP-IDF
+Những điểm mạnh:
+- Có thể dựng lại một mô hình 3D từ một mô hình gốc
 - 
-
-Giai đoạn 1: Lắp ráp và mô phỏng thử
-- Mua mấy cái module về để lắp ráp test thử chức năng chính có chạy được không, đã test thành công
-- Chốt phần ý tưởng
