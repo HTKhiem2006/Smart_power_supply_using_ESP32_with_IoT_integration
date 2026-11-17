@@ -1,4 +1,4 @@
-Tính toán, thiết kế một bộ nguồn di động có khả năng cấp ra điện áp từ điều chỉnh được bằng núm xoay vặn bằng tay, sau này sẽ nâng cấp lên điều chỉnh trên phần mềm điện thoại/ máy tính. Ngoài ra còn có thể quan sát được điện áp hiện tại, dòng điện tiêu thụ của tải, hiển thị trên màn hình OLED 0.98" và sau này có thể hiển thị lên phần mềm điện thoại/ máy tính.
+Tính toán, thiết kế một bộ nguồn di động có khả năng cấp ra điện áp từ điều chỉnh được bằng núm xoay vặn bằng tay, sau này sẽ nâng cấp lên điều chỉnh trên phần mềm điện thoại/ máy tính. Ngoài ra còn có thể quan sát được điện áp hiện tại, dòng điện tiêu thụ của tải, hiển thị trên màn hình LCD 16x02/OLED 0.98" và sau này có thể hiển thị lên phần mềm điện thoại/ máy tính.
 
 
 Yêu cầu kĩ thuật:
@@ -7,8 +7,8 @@ Yêu cầu kĩ thuật:
 - điều chỉnh từ 0 đến 12V bằng núm xoay (không nhất thiết phải về 0V), nếu có thể sau này sẽ điều chỉnh trên phần mềm
 - có thể cấp dòng tối đa 6A --> 12*6 = 78W
 - Hệ thống sẽ dùng pin, chứ không dùng nguồn adapter, các bộ phận quản lý pin (BMS) nằm riêng
-- Có khả năng hiển thị các thông số lên một màn hình OLED, nếu có thể sau này sẽ quan sát trên phần mềm
-- Đang hướng tới tạo thêm xung clock nữa chu kỳ 1 giây và các 
+- Có khả năng hiển thị thông số điện áp và dòng điện lên LCD 16x02 và phần giản đồ sóng lên OLED to dùng giao thức SPI để đẹp mắt hơn, nếu có thể sau này sẽ quan sát trên phần mềm
+- Đang hướng tới tạo thêm xung clock nữa chu kỳ 1 giây và các tín hiệu liên quan
 - Hệ thống sẽ có các khối bảo vệ quá dòng, quá áp, quá nhiệt,...
 - Sẽ thiết kế toàn bộ trên PCB mà không dùng module ghép lại, riêng chỉ có ESP32 là dùng module gắn lên PCB
 - Sau này sẽ nâng cấp lên thiết kế vỏ đi in 3D
