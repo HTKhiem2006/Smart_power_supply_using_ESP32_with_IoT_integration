@@ -28,4 +28,7 @@ Linh kiện sẽ sử dụng:
 
 Những điểm mạnh:
 - Có thể dựng lại một mô hình 3D từ một mô hình gốc
+- Giao thức và ngoại vi: I2C, SPI, ADC, DAC, Timer, GPIO,
 - 
+
+
