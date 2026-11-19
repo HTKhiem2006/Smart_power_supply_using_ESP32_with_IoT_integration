@@ -27,9 +27,10 @@ Linh kiện sẽ sử dụng:
 
 
 Những điểm mạnh:
-- Có thể dựng lại một mô hình 3D từ một mô hình gốc
-- Giao thức và ngoại vi: I2C, SPI, ADC, DAC, Timer, GPIO,
-- Đã mô phỏng ở mức độ module được rồi
+- Có thể tạo ra mô hình model 3D hoàn toàn mới
+- Giao thức và ngoại vi: I2C, SPI, ADC, DAC, Timer, GPIO, Interupt, Wifi
+- Đã mô phỏng ở mức độ module trên thực tế được rồi
+- Đang hướng tới mô phỏng trên proteus
 - 
 
 
