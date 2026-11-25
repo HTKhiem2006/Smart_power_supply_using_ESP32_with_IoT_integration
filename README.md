@@ -11,3 +11,4 @@ Tính toán và thiết kế một bộ nguồn cung cấp điện áp có khả
 - Các nút nhấn và công tắc để tương tác với hệ thống
 - Còi bíp và LED để báo hiệu
 
+ Đã đầy đủ linh kiện, chỉ chờ biến trở số về để thực nghiệm lắp mạch chạy thử thôi 
